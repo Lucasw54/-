@@ -3,11 +3,11 @@ import sys
 import pygame
 
 class Game:
-    def __int__(self):
+    def __init__(self):
         pygame.init()
 
         pygame.display.set_caption('لعبة النينجا')
-        screen = pygame.display.set_mode((640, 480))
+        self.screen = pygame.display.set_mode((800, 400))
 
         self.clock = pygame.time.Clock()
 
